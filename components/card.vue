@@ -75,14 +75,39 @@
         Reserve
       </v-btn>
     </v-card-actions>
+    <v-bottom-navigation
+      :value="value"
+      color="teal"
+      grow
+    >
+      <v-btn>
+        <span>Recents</span>
+
+        <v-icon>mdi-history</v-icon>
+      </v-btn>
+
+      <v-btn>
+        <span>Favorites</span>
+
+        <v-icon>mdi-heart</v-icon>
+      </v-btn>
+
+      <v-btn>
+        <span>Nearby</span>
+
+        <v-icon>mdi-map-marker</v-icon>
+      </v-btn>
+    </v-bottom-navigation>
   </v-card>
   </v-hover>
+  
 </template>
 <script>
   export default {
     data: () => ({
       loading: false,
       selection: 1,
+      value: 1,
     }),
 
     methods: {
@@ -94,3 +119,8 @@
     },
   }
 </script>
+<style scoped>
+.v-btn{
+  width:auto;
+}
+</style>
