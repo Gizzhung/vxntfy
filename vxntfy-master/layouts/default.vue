@@ -108,11 +108,6 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire'
-        },
-        {
-          icon: 'mdi-account-circle',
-          title: 'NYnews',
-          to: '/News'
         }
       ],
       miniVariant: false,
